@@ -1,4 +1,4 @@
-package Chap3ProblemSolvingParadigms.CompleteSearch.IterativeThreeNestedHard.p11565;
+package Chap3ProblemSolvingParadigms.CompleteSearch.IterativeThreeOrMoreNestedHard.p11565;
 
 import java.io.*;
 import java.util.StringTokenizer;
