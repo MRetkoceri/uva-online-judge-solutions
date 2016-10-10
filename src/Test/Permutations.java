@@ -1,4 +1,4 @@
-package Trainings;
+package Test;
 
 /**
  * Created by Muhamed on 29-Sep-16.

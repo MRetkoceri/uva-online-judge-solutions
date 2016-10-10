@@ -1,4 +1,4 @@
-package Trainings;
+package Test;
 
 import java.util.*;
 
