@@ -1,4 +1,4 @@
-package Other.SwercRegional2015.p7275;
+package p13018;
 
 import java.io.*;
 import java.util.*;
