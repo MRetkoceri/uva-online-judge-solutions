@@ -1,10 +1,7 @@
 package p11902;
 
 import java.io.*;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.StringTokenizer;
-import java.util.Vector;
+import java.util.*;
 
 import static java.lang.Double.parseDouble;
 import static java.lang.Integer.parseInt;
@@ -48,6 +45,22 @@ public class Main {
         }
     }
 
+    static void bfs(int u, int disable){
+        Queue<Integer> queue = new LinkedList<Integer>();
+        queue.add(u);
+        visited[u] = 1;
+        while(!queue.isEmpty()){
+            int v = queue.poll();
+            for (int i = 0; i < adjList.get(u).size(); i++) {
+                int val = adjList.get(u).get(i).first();
+                if(val!=disable && visited[val]==0){
+                    visited[val] = 1;
+                    queue.add(val);
+                }
+            }
+        }
+    }
+
     static void solve() throws Exception {
         int t = nextInt();
         for (int i = 1; i <= t; i++) {
@@ -79,6 +92,7 @@ public class Main {
             for (int j = 1; j < n; j++) {
                 visited = new int[n];
                 dfs(0,j);
+                //bfs(0,j);
                 sb.append("|");
                 for (int k = 0; k < visited.length; k++) {
                     if(visited[k] == 0 && vif[k] == 1)
