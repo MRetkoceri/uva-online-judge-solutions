@@ -7,7 +7,8 @@ import java.util.*;
  */
 public class JavaEx {
     public static void main(String [] arg){
-
+        int [] a = {2,3,5,6};
+        System.out.println(Arrays.binarySearch(a,1));
         //System.out.println(Integer.toBinaryString(2));
         //System.out.printf("%3s","a");
         //ex2();
