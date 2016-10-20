@@ -38,7 +38,7 @@ public class Main {
             int last = -1,first = 0;
             for (int j = 0; j < q.length(); j++) {
                 int[]state = states[q.charAt(j)-A];
-                last = Arrays.binarySearch(state,last+1); 
+                last = Arrays.binarySearch(state,last+1);
                 if(last==-state.length-1) {
                     sol = false;
                     break;
